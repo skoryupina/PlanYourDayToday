@@ -1,0 +1,118 @@
+<resources>
+    <string name="app_name">Planner</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_example">Example action</string>
+
+    <string name="action_settings">Settings</string>
+
+
+    <!--Create task dialog-->
+    <string name="action_create">Create</string>
+    <string name="action_cancel">Cancel</string>
+
+    <string name="task_category">Category</string>
+    <string name="task_startDate">From date     </string>
+    <string name="task_startTime">From time     </string>
+    <string name="task_toDate">To date  </string>
+    <string name="task_finishDate">Finish date  </string>
+    <string name="task_finishTime">Finish time  </string>
+    <string name="task_summary">Summary</string>
+    <string name="task_attach">Add photos</string>
+
+    <!--ActionBar button-->
+    <string name="action_help">Help</string>
+    <string name="action_add">Add</string>
+    <string name="action_category">Category</string>
+
+
+    <!--About dialog-->
+    <string name="about_toast">
+        Laboratory work #4\n
+        Author: Ekaterina Skoryupina\n
+        Group: 622M\n
+        University: SSAU\n
+    </string>
+
+    <string name="choose_categories">Choose categories</string>
+
+
+    <string name="tab">\u0009\u0009\u0009\u0009\u0009\u0009\u0009</string>
+    <string name="favourite_by_amount">Favourite: by amount</string>
+    <string name="favourite_by_duration">Favourite: by duration</string>
+    <string name="favourite_by_choose">Statistics: Chosen</string>
+    <string name="pie_chart_for_all">Statistics: Pie-Chart</string>
+
+    <!-- Drover menu -->
+    <string-array name="menu_items">
+        <item>@string/favourite_by_amount</item>
+        <item>@string/favourite_by_duration</item>
+        <item>@string/favourite_by_choose</item>
+        <item>@string/pie_chart_for_all</item>
+    </string-array>
+    <string name="statistics_pref"> Statistics references</string>
+    <string name="statistics_config"> Choose statistics configuration</string>
+
+    <string-array name="stat_config">
+        <item>Month</item>
+        <item>Interval</item>
+    </string-array>
+
+
+    <string name="refresh"> Update  </string>
+    <string name="task_created"> New task created.</string>
+    <string name="nothingFound"> Nothing found.</string>
+
+
+
+    <!--Category activity-->
+
+    <!--Create new category editText hint-->
+    <string name="input_new_category_name"> Input new category name </string>
+    <string name="error_date_time"> Set time and date fields properly.</string>
+    <string name="error_category"> Input category, please.</string>
+    <string name="picture_added"> Picture added.</string>
+    <!--Error dialog-->
+    <string name="error_title"> Error </string>
+    <string name="error_message"> Category is already in the list. </string>
+    <string name="empty_category"> Input category name. </string>
+    <!--global menu-->
+    <string name="global_about">About</string>
+    <string name="global_exit">Exit</string>
+
+    <!--Delete dialog-->
+    <string name="delete_confirmation">Delete confirmation</string>
+    <string name="delete_question">Are you sure you want to delete the category?</string>
+
+    <!--Exit dialog-->
+    <string name="exit_confirmation">Exit confirmation</string>
+    <string name="exit_question">Are you sure you want to exit?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+
+    <string name="category_in_scheduler_layout">\t\t\tCategory</string>
+    <string name="time_in_scheduler_layout">\t\t\tTime</string>
+    <string name="usage_in_category_layout">\t\t\tUsage</string>
+    <string name="description_in_scheduler_layout">\t\t\tMake Your Day-Today!</string>
+    <string name="title_activity_new_task">NewTaskActivity</string>
+
+
+    <string name="title_activity_categories">Categories</string>
+    <string name="title_activity_pie_chart_statistics">Statistics: Pie-Chart</string>
+    <string name="title_activity_list_statistics">ListStatisticsActivity</string>
+    <string name="kind_of_statistics">KIND OF STATISTICS</string>
+    <string name="menu_item">MENU_ITEM</string>
+    <string name="categories_chooser_for_statistics">Choose categories...</string>
+    <string name="empty_categories_list">List of categories is empty.</string>
+    <string name="choose_categories_toast">Choose categories.</string>
+    <string name="title_activity_task_details">Task details</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="task_id_details">id</string>
+    <string name="task_duration_details">duration</string>
+    <string name="task_summary_details">summary</string>
+    <string name="task_caterory_details">category</string>
+    <string name="task_duration">Duration</string>
+</resources>

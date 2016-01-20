@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="60dp"
+    android:background="#ffebeff1"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/item_scheduler_shareview"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:background="#FFAA55"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:src="@android:drawable/ic_dialog_info" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/item_task_deleteview"
+        android:layout_width="fill_parent"
+        android:layout_height="75dp"
+        android:background="#757770"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:src="@android:drawable/ic_menu_delete" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/item_task_mainview"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="#E3F7F7"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="0.5">
+
+            <TextView
+                android:id="@+id/tvCategory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="@string/category_in_scheduler_layout"
+                android:textColor="#001388"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginTop="4dp" />
+
+            <TextView
+                android:id="@+id/tvDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:text="@string/description_in_scheduler_layout"
+                android:textColor="@android:color/black"
+                android:textSize="12sp"
+                android:textStyle="italic" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="0.5">
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvTime"
+            android:layout_width="96dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="200dp"
+            android:text="@string/time_in_scheduler_layout"
+            android:textColor="#001388"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_gravity="right"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="4dp" />
+    </RelativeLayout>
+</RelativeLayout>
+

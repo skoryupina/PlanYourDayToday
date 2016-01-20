@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?><!--  Single List Item Design -->
+
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tvCategory"
+    android:layout_width="fill_parent"
+    android:layout_height="40dp"
+    android:text="@string/category_in_scheduler_layout"
+    android:textColor="#001388"
+    android:textSize="20sp"
+    android:textStyle="bold"
+    android:gravity="center_vertical"
+    android:paddingLeft="10dp"
+    />

@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context="com.github.skoryupina.planyourdaytoday.NewTaskActivity"
+    android:background="#f0f0f0">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/cancel_button"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="155dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:onClick=""
+            android:text="@string/action_cancel"
+            android:textStyle="bold"
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+        <Button
+            android:id="@+id/create_button"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="155dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="false"
+            android:layout_alignParentTop="true"
+            android:onClick="createNewTask"
+            android:text="@string/action_create"
+            android:textStyle="bold"
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageViewCategory"
+                android:src="@drawable/category"
+                android:layout_gravity="center_vertical" />
+
+            <AutoCompleteTextView
+                android:id="@+id/inputCategory"
+                android:layout_width="fill_parent"
+                android:dropDownHeight="wrap_content"
+                android:ems="10"
+                android:hint="@string/task_category"
+                android:background="@android:color/background_light"
+                android:layout_height="30dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_marginLeft="10dp"
+                android:textStyle="italic"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageViewClock"
+                android:src="@drawable/clock" />
+
+            <TextView
+                android:id="@+id/inputStartDate"
+                android:layout_width="150dp"
+                android:layout_height="30dp"
+                android:clickable="true"
+                android:hint="@string/task_startDate"
+                android:inputType="none"
+                android:onClick="showDatePickerDialog"
+                android:layout_gravity="left"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:background="@android:color/background_light"
+                android:layout_marginLeft="10dp" />
+
+            <TextView
+                android:id="@+id/inputStartTime"
+                android:layout_width="150dp"
+                android:layout_height="30dp"
+                android:layout_gravity="right"
+                android:clickable="true"
+                android:hint="@string/task_startTime"
+                android:inputType="none"
+                android:onClick="showTimePickerDialog"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:background="@android:color/background_light"
+                android:layout_marginLeft="10dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/inputFinishDate"
+                android:layout_width="150dp"
+                android:layout_height="30dp"
+                android:hint="@string/task_finishDate"
+                android:clickable="true"
+                android:onClick="showDatePickerDialog"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:background="@android:color/background_light"
+                android:layout_marginLeft="34dp" />
+
+            <TextView
+                android:id="@+id/inputFinishTime"
+                android:layout_width="150dp"
+                android:layout_height="30dp"
+                android:layout_gravity="right"
+                android:hint="@string/task_finishTime"
+                android:clickable="true"
+                android:onClick="showTimePickerDialog"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:background="@android:color/background_light"
+                android:layout_marginLeft="10dp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageViewSummary"
+            android:src="@drawable/summary" />
+
+        <EditText
+            android:id="@+id/inputSummary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/task_summary"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="italic"
+            android:layout_marginLeft="10dp"
+            android:background="@android:color/background_light"
+            android:inputType="textMultiLine"
+            android:maxLines="3"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp">
+
+
+        <ImageButton
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageViewAttach"
+            android:src="@drawable/attach"
+            android:onClick="chooseImageDialog"
+            android:text="@string/task_attach"/>
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/scrollView" >
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="3"
+                android:rowCount="3"
+                android:layout_gravity="center"
+                android:id="@+id/gridPhotos"
+                android:columnWidth="90dp"
+                android:numColumns="auto_fit"
+                android:verticalSpacing="10dp"
+                android:horizontalSpacing="10dp"
+                android:stretchMode="columnWidth"
+                android:gravity="center"
+
+                />
+        </ScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+</LinearLayout>
